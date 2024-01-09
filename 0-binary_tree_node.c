@@ -9,23 +9,23 @@
 binary_tree_t *binary_tree_node(binary_tree_t *parent, int value)
 {
 
-    binary_tree_t *new_node = NULL;
+	binary_tree_t *new_node = NULL;
 
-    /* Allocate memory for the new node */
-    new_node = malloc(sizeof(binary_tree_t));
+	/* Allocate memory for the new node */
+	new_node = malloc(sizeof(binary_tree_t));
 
-    if (new_node == NULL)
-        return (NULL);
+	if (new_node == NULL)
+		return (NULL);
 
-    /* Assign data to this node */
-    new_node->n = value;
+	/* Assign data to this node */
+	new_node->n = value;
 
-    /* Initialize left and right children as NULL */
-    new_node->left = NULL;
-    new_node->right = NULL;
+	/* Initialize left and right children as NULL */
+	new_node->left = NULL;
+	new_node->right = NULL;
 
-    /* Assign parent to new_node */
-    new_node->parent = parent;
+	/* Assign parent to new_node */
+	new_node->parent = parent;
 
-    return (new_node);
+	return (new_node);
 }
