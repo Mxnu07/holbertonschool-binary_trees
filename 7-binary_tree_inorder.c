@@ -7,8 +7,8 @@
  */
 void binary_tree_inorder(const binary_tree_t *tree, void (*func)(int))
 {
-	if (tree == NULL)
-		return;
+    if (tree == NULL || func == NULL)
+        return;
 	/* first recur on left child */
 	binary_tree_inorder(tree->left, func);
 	/* then print the data of node */
