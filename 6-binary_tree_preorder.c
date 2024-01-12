@@ -7,13 +7,13 @@
  */
 void binary_tree_preorder(const binary_tree_t *tree, void (*func)(int))
 {
-    if (tree && func)
-    {
-        /* first print data of node */
-        func(tree->n);
-        /* then recur on left subtree */
-        binary_tree_preorder(tree->left, func);
-        /* now recur on right subtree */
-        binary_tree_preorder(tree->right, func);
-    }
+	if (tree && func)
+	{
+		/* first print data of node */
+		func(tree->n);
+		/* then recur on left subtree */
+		binary_tree_preorder(tree->left, func);
+		/* now recur on right subtree */
+		binary_tree_preorder(tree->right, func);
+	}
 }

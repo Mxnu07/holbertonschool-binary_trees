@@ -7,12 +7,12 @@
  */
 void binary_tree_postorder(const binary_tree_t *tree, void (*func)(int))
 {
-    if (tree == NULL)
-        return;
-    /* first recur on left child */
-    binary_tree_postorder(tree->left, func);
-    /* then recur on right child */
-    binary_tree_postorder(tree->right, func);
-    /* now deal with the node */
-    func(tree->n);
+	if (tree == NULL)
+		return;
+	/* first recur on left child */
+	binary_tree_postorder(tree->left, func);
+	/* then recur on right child */
+	binary_tree_postorder(tree->right, func);
+	/* now deal with the node */
+	func(tree->n);
 }
