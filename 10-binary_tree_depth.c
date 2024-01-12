@@ -19,4 +19,7 @@ size_t binary_tree_depth(const binary_tree_t *tree)
     }
     return (depth);
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> b11836b238fbd7763003f471add65e6b666fd531
